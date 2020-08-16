@@ -214,7 +214,7 @@ header .header-greet {
   .heya-eat-box-gb {
     width: 92%;
     height: 931px;
-    background: url("/images/japanese-paper-04.jpg");
+    background: url("/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -228,7 +228,7 @@ header .header-greet {
   .heya-eat-box-gb2 {
     width: 88%;
     height: 772px;
-    background: url("/images/japanese-paper-04.jpg");
+    background: url("/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -462,7 +462,7 @@ header .header-greet {
 }
 
 #sugosikata .asa-text {
-  background: url("/images/bg-pickup.jpg");
+  background: url("/bg-pickup.jpg");
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -533,7 +533,7 @@ header .header-greet {
 }
 
 #sugosikata .kuruma-text {
-  background: url("/images/bg-pickup.jpg");
+  background: url("/bg-pickup.jpg");
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -630,7 +630,7 @@ header .header-greet {
   height: 150px;
   padding: 20px;
   text-align: center;
-  background: url("/images/bg-pickup.jpg");
+  background: url("/bg-pickup.jpg");
   line-height: 1.5em;
 }
 
@@ -651,7 +651,7 @@ header .header-greet {
     height: 500px;
     width: 60%;
     position: absolute;
-    background: url("/images/japanese-paper-04.jpg");
+    background: url("/japanese-paper-04.jpg");
     opacity: 0.2;
     z-index: 1;
   }
