@@ -1,0 +1,882 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Hannari","ヒラギノ明朝 ProN",serif;
+  box-sizing: content-box;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    text-align: center;
+  }
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 800px;
+  }
+}
+
+header .header-image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  header .header-image img {
+    height: 800px;
+  }
+}
+
+header .header-nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+@media screen and (min-width: 768px) {
+  header .header-logo {
+    width: 300px;
+    height: 180px;
+    opacity: 0.9;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .header-logo {
+    width: 100px;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .header-text {
+    margin-right: 40px;
+    margin-top: -40px;
+    text-align: center;
+  }
+  header .header-text .header-text-p1 {
+    font-size: 16px;
+  }
+  header .header-text .header-text-p2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .header-text .header-text {
+    font-size: 10px;
+  }
+  header .header-text .header-text-p1 {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .header-left {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .header-left {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .header-right {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .header-list {
+    display: flex;
+    font-size: 20px;
+    padding-top: 60px;
+  }
+}
+
+header .header-list .header-list-item {
+  margin-right: 20px;
+}
+
+header .header-list .header-list-item a {
+  text-decoration: none;
+  display: block;
+  color: #f6e9e3;
+}
+
+@media screen and (max-width: 767px) {
+  header .header-list .header-list-item a {
+    color: #333;
+    padding-top: 40px;
+  }
+}
+
+header .header-list .header-list-item a::after {
+  content: "";
+  border-bottom: solid 2px #f6e9e3;
+  display: block;
+  transition: all .3s ease;
+  width: 0;
+}
+
+header .header-list .header-list-item a:hover {
+  opacity: 0.8;
+}
+
+header .header-list .header-list-item a:hover::after {
+  width: 100%;
+}
+
+header .header-greet {
+  color: #f6e9e3;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  header .header-greet {
+    top: 450px;
+    left: 280px;
+    font-size: 36px;
+    line-height: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .header-greet {
+    font-size: 14px;
+    top: 200px;
+  }
+}
+
+.section1-2_bg {
+  background-color: #fdf8f5;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .section1-2_bg {
+    z-index: -2;
+  }
+}
+
+.section-title {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 30px;
+    margin: 0 0 50px 0;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heya-eat-box-gb {
+    width: 92%;
+    height: 931px;
+    background: url("/images/japanese-paper-04.jpg");
+    z-index: -1;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+  }
+  .heya-eat-box-gb2 {
+    width: 88%;
+    height: 772px;
+    background: url("/images/japanese-paper-04.jpg");
+    z-index: -1;
+    opacity: 0.9;
+    position: absolute;
+    top: 1060px;
+    right: 0;
+    opacity: 0.2;
+  }
+}
+
+#heya {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #heya {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #heya img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #heya img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+#heya .heya-text {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #heya .heya-text {
+    width: 400px;
+    height: 400px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #heya .heya-text {
+    width: 130px;
+    height: 130px;
+    font-size: 12px;
+  }
+}
+
+#heya .heya-content {
+  display: flex;
+  align-items: center;
+}
+
+#heya .heya-content2 {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  #eat {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #eat .eat-content1 {
+    display: flex;
+  }
+  #eat .eat-content2 {
+    display: flex;
+    margin-top: -130px;
+  }
+}
+
+#eat .eat-text {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #eat .eat-text {
+    width: 600px;
+    height: 400px;
+    font-size: 20px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #eat .eat-text {
+    font-size: 12px;
+  }
+}
+
+#eat .eat-text2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #eat .eat-text2 {
+    width: 400px;
+    height: 400px;
+    font-size: 20px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #eat .eat-text2 {
+    font-size: 12px;
+  }
+}
+
+#eat img {
+  border-radius: 50%;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  #eat .dinner {
+    width: 600px;
+    height: 500px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #eat .dinner {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #eat .awamori {
+    width: 400px;
+    height: 400px;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #eat .awamori {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#price .price-title {
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #price .price-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #price .price-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #price table {
+    width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #price table {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+#price table tr {
+  border-bottom: solid 2px #333;
+}
+
+#price table tr:last-child {
+  border-bottom: none;
+}
+
+#price table th {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#price table td {
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+#sugosikata {
+  height: 100%;
+  background-color: #fdf8f5;
+}
+
+#sugosikata img {
+  width: 300px;
+  height: 300px;
+}
+
+#sugosikata .asa {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .asa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+
+#sugosikata .asa-text {
+  background: url("/images/bg-pickup.jpg");
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .asa-text {
+    width: 490px;
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sugosikata .asa-text {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+}
+
+#sugosikata .asa-img {
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .asa-img {
+    width: 450px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sugosikata .asa-img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+#sugosikata .kuruma {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .kuruma {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+  }
+}
+
+#sugosikata .kuruma-img {
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .kuruma-img {
+    width: 490px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sugosikata .kuruma-img {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+#sugosikata .kuruma-text {
+  background: url("/images/bg-pickup.jpg");
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .kuruma-text {
+    width: 450px;
+    padding-top: 100px;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sugosikata .kuruma-text {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+#sugosikata .slide {
+  display: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .slide {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+}
+
+#sugosikata .slide li {
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .slide li {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sugosikata .slide li {
+    margin: 20px auto;
+  }
+}
+
+#sugosikata .show {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata .show {
+    display: flex;
+  }
+}
+
+#sugosikata #sugosikata-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #sugosikata #sugosikata-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sugosikata #sugosikata-title {
+    position: relative;
+  }
+}
+
+#sugosikata #sugosikata-title .index-btn {
+  margin-right: 20px;
+  padding: 10px;
+  border: solid 2px #333;
+  cursor: pointer;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+}
+
+#sugosikata #sugosikata-title .active {
+  background-color: #a5e9f1;
+}
+
+#sugosikata .slide-text {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  background: url("/images/bg-pickup.jpg");
+  line-height: 1.5em;
+}
+
+#access {
+  position: relative;
+  text-align: center;
+  background-color: #fdf8f5;
+}
+
+@media screen and (min-width: 768px) {
+  #access {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-bg-box {
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    background: url("/images/japanese-paper-04.jpg");
+    opacity: 0.2;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .section-title-access {
+    font-size: 32px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 530px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #access .section-title-access {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+#access .access-text {
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-text {
+    width: 60%;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #access .access-text {
+    font-size: 14px;
+  }
+}
+
+#access .access-text .tel {
+  display: inline-block;
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-text .tel {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #access .access-text .tel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .pic {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #access .pic {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-etc {
+    margin-top: -60px;
+    margin-right: 140px;
+    line-height: 1.5em;
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #access .access-etc .access-etc-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .hune {
+    height: 130px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .hikouki {
+    height: 130px;
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .heri {
+    height: 130px;
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #access .access-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#access img {
+  width: 200px;
+  height: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  #access img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #access img {
+    margin-top: 10px;
+  }
+}
+
+#access .access-etc-img {
+  height: 130px;
+}
+
+#greet {
+  width: 100%;
+  height: 100%;
+  background-color: #fdf8f5;
+}
+
+@media screen and (max-width: 767px) {
+  #greet {
+    padding-top: 30px;
+  }
+}
+
+#greet .owner-message {
+  text-align: center;
+}
+
+#greet .owner-img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#greet .owner-img img {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  #greet .message-box {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #526170;
+}
+
+footer a {
+  color: #fdf8f5;
+  text-decoration: none;
+}
+
+footer .footer-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-list {
+  padding-left: 50px;
+}
+
+footer .footer-list li {
+  padding-top: 20px;
+}
+
+footer .footer-sns {
+  display: flex;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+footer .footer-sns .fab {
+  color: #fdf8f5;
+  font-size: 36px;
+  padding-right: 10px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-text {
+    font-size: 12px;
+  }
+}
