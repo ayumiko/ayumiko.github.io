@@ -30,7 +30,7 @@ $breakpoints: (
 body {
   font-family: "Hannari","ヒラギノ明朝 ProN",serif;
   box-sizing: content-box;
-
+  list-style: none;
 }
 
 .wrap {
@@ -224,8 +224,8 @@ header {
 
 }
 
-@include mq(md) {
-  .heya-eat-box-gb {
+.heya-eat-box-gb {
+  @include mq(md) {
     width: 92%;
     height: 931px;
     background: url('/images/japanese-paper-04.jpg');
@@ -234,10 +234,12 @@ header {
     position: absolute;
     top: 0;
     left:0;
-    opacity: 0.2;
+    opacity: 0.2;   
   }
-  
-  .heya-eat-box-gb2 {
+}
+
+.heya-eat-box-gb2 {
+  @include mq(md) {
     width: 88%;
     height: 772px;
     background: url('/images/japanese-paper-04.jpg');
@@ -248,7 +250,6 @@ header {
     right: 0;
     opacity: 0.2;
   }
-  
 }
 
 
