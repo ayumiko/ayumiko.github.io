@@ -222,6 +222,9 @@ header .header-greet {
     left: 0;
     opacity: 0.2;
   }
+}
+
+@media screen and (min-width: 768px) {
   .heya-eat-box-gb2 {
     width: 88%;
     height: 772px;
