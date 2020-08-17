@@ -24,7 +24,7 @@ $(function() {
       $('.slide').removeClass('show').eq(clickedIndex).addClass('show');
   });
 
-  $('#top-logo').click(function() {
+  $('#top-logo,#to-top').click(function() {
     $('html,body').animate({
       'scrollTop':0
     },'slow');
