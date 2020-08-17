@@ -180,6 +180,27 @@ header .header-greet {
   }
 }
 
+header .header-greet2 {
+  color: #f6e9e3;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  header .header-greet2 {
+    top: 550px;
+    left: 280px;
+    font-size: 36px;
+    line-height: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .header-greet2 {
+    font-size: 14px;
+    top: 250px;
+  }
+}
+
 .section1-2_bg {
   background-color: #fdf8f5;
   position: relative;
@@ -205,8 +226,8 @@ header .header-greet {
 
 @media screen and (max-width: 767px) {
   .section-title {
-    margin-bottom: 20px;
-    padding-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 30px;
   }
 }
 
@@ -214,7 +235,7 @@ header .header-greet {
   .heya-eat-box-gb {
     width: 92%;
     height: 931px;
-    background: url("/japanese-paper-04.jpg");
+    background: url("/images/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -228,7 +249,7 @@ header .header-greet {
   .heya-eat-box-gb2 {
     width: 88%;
     height: 772px;
-    background: url("/japanese-paper-04.jpg");
+    background: url("/images/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -245,6 +266,12 @@ header .header-greet {
 @media screen and (min-width: 768px) {
   #heya {
     width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #heya {
+    padding-top: 50px;
   }
 }
 
@@ -462,7 +489,7 @@ header .header-greet {
 }
 
 #sugosikata .asa-text {
-  background: url("/bg-pickup.jpg");
+  background: url("/images/bg-pickup.jpg");
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -533,7 +560,7 @@ header .header-greet {
 }
 
 #sugosikata .kuruma-text {
-  background: url("/bg-pickup.jpg");
+  background: url("/images/bg-pickup.jpg");
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -563,8 +590,11 @@ header .header-greet {
 
 @media screen and (min-width: 768px) {
   #sugosikata .slide {
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     display: none;
   }
 }
@@ -576,6 +606,7 @@ header .header-greet {
 @media screen and (min-width: 768px) {
   #sugosikata .slide li {
     margin-right: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -630,7 +661,7 @@ header .header-greet {
   height: 150px;
   padding: 20px;
   text-align: center;
-  background: url("/bg-pickup.jpg");
+  background: url("/images/bg-pickup.jpg");
   line-height: 1.5em;
 }
 
@@ -651,7 +682,7 @@ header .header-greet {
     height: 500px;
     width: 60%;
     position: absolute;
-    background: url("/japanese-paper-04.jpg");
+    background: url("/images/japanese-paper-04.jpg");
     opacity: 0.2;
     z-index: 1;
   }
@@ -811,6 +842,13 @@ header .header-greet {
 
 #greet .owner-message {
   text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #greet .owner-message {
+    width: 50%;
+  }
 }
 
 #greet .owner-img {
@@ -830,6 +868,81 @@ header .header-greet {
     margin: 0 auto;
     padding: 50px 50px 0;
   }
+}
+
+@media screen and (min-width: 768px) {
+  #greet .greet-text_info-container {
+    display: flex;
+  }
+}
+
+#greet #info {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #greet #info {
+    width: 50%;
+  }
+  #greet #info .section-title {
+    padding-right: 166px;
+  }
+}
+
+#greet #info .info-items {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  #greet #info .info-items {
+    height: 50%;
+    width: 80%;
+  }
+}
+
+#greet #info .info-items .info-more {
+  display: inline-block;
+  border-bottom: 2px solid #324ca1;
+  margin-top: 60px;
+  position: relative;
+}
+
+#greet #info .info-items .info-more a {
+  color: #324ca1;
+}
+
+#greet .info-item {
+  padding-top: 20px;
+  border-bottom: solid 1px #333;
+}
+
+@media screen and (max-width: 767px) {
+  #greet .info-item {
+    font-size: 12px;
+  }
+}
+
+#greet .info-item .info-meta {
+  display: flex;
+}
+
+#greet .info-item a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+#greet .info-item .info-public {
+  padding: 0 10px 5px;
+}
+
+#greet .info-item .info-label {
+  padding: 0 5px 5px;
+}
+
+#greet .info-item .info-body {
+  width: 60%;
+  padding: 0 5px 20px;
 }
 
 footer {
