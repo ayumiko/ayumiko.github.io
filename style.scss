@@ -192,6 +192,25 @@ header {
 
   }
 
+  .header-greet2 {
+    color: #f6e9e3;
+    position: absolute;
+
+    @include mq(md) {
+      top: 550px;
+      left: 280px;
+      font-size: 36px;
+      line-height: 2em;     
+    }
+
+    @include mq(sp) { 
+      font-size: 14px;
+      top: 250px;
+    
+    }
+
+  }
+
 
 }
 
@@ -218,8 +237,8 @@ header {
   }
 
   @include mq(sp) {
-    margin-bottom: 20px;
-    padding-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 30px;
   }
 
 }
@@ -228,7 +247,7 @@ header {
   @include mq(md) {
     width: 92%;
     height: 931px;
-    background: url('/images/japanese-paper-04.jpg');
+    background: url('/japanese-paper-04.jpg');
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -242,7 +261,7 @@ header {
   @include mq(md) {
     width: 88%;
     height: 772px;
-    background: url('/images/japanese-paper-04.jpg');
+    background: url('/japanese-paper-04.jpg');
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -259,7 +278,10 @@ header {
   
   @include mq(md) {
     width: 1200px;
+  }
 
+  @include mq(sp) {
+    padding-top: 50px;
   }
   
   img {
@@ -272,7 +294,6 @@ header {
     @include mq(sp) {
       width: 130px;
       height: 130px;
-
     }
   }
 
@@ -555,8 +576,11 @@ header {
 
   .slide {
     @include mq(md) {
+      width: 80%;
+      margin: auto;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       display: none;
     }
     
@@ -566,7 +590,11 @@ header {
     li {
       @include mq(md) {
         margin-right: 20px;
+        margin-top: 20px;
       }
+
+      
+      
 
       box-shadow: 0 0 0.25em rgba(0,0,0,.25);
 
@@ -788,13 +816,18 @@ header {
   width: 100%;
   height: 100%;
   background-color: #fdf8f5;
+  
 
   @include mq(sp) {
     padding-top: 30px;
   }
 
   .owner-message {
+    @include mq(md) {
+      width: 50%;  
+    }
     text-align: center;
+    margin: 0 auto;
   }
 
   .owner-img {
@@ -816,9 +849,95 @@ header {
       padding: 50px 50px 0;
     }    
   }
+
+
+  .greet-text_info-container {
+
+    @include mq(md) {
+      display: flex;
+    }
+
+
+  }
+
+    #info {
+      text-align: center;
+
+      @include mq(md) {
+        width: 50%;
+        
+        .section-title {
+          padding-right: 166px;
+        }
+      }
+      
+
+
+
+      .info-items {
+        background-color: #fff;
+
+        @include mq(md) {
+          height: 50%;
+          width: 80%;
+          
+        }
+
+        .info-more {
+
+          a {
+            color: #324ca1;
+          }
+          display: inline-block;
+          border-bottom: 2px solid #324ca1;
+          margin-top: 60px;
+          position: relative;
+
+        }
+          
+      }
+    }
+
+    .info-item  {
+      padding-top: 20px;
+      border-bottom: solid 1px #333;
+
+      @include mq(sp) {
+        font-size: 12px;
+        
+      }
+
+
+      .info-meta {
+       display: flex;
+      }
+
+      a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+
+      .info-public {
+        padding: 0 10px 5px;
+      }
+
+      .info-label {
+        padding: 0 5px 5px;
+      }
+
+      .info-body {
+        width: 60%;  
+        padding: 0 5px 20px;
+      }
+      
+
+    }
+    
+    
+}
   
 
-}
 
 
 footer {
