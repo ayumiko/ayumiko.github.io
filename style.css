@@ -956,6 +956,8 @@ footer a {
 }
 
 footer .footer-link {
+  color: #fdf8f5;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
