@@ -10,7 +10,7 @@ $(function() {
 
   $('.slider').slick({
     autoplay:true,
-    autoplaySpeed:4000,
+    autoplaySpeed:5000,
     dots:true,
     infinite:true,
 
