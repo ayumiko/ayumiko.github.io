@@ -1,0 +1,1001 @@
+@charset "utf-8";
+
+
+// メディアクエリ
+$breakpoints: (
+  'sp': 'screen and (max-width: 767px)',
+  'md': 'screen and (min-width: 768px)',
+) !default;
+
+@mixin mq($breakpoint:md) {
+  @media #{map-get($breakpoints,$breakpoint) } {
+    @content; 
+  }
+}
+
+@include mq(sp) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@include mq(md) {
+  .is-sp {
+    display: none;
+  }
+}
+
+
+
+body {
+  font-family: "Hannari","ヒラギノ明朝 ProN",serif;
+  box-sizing: content-box;
+  list-style: none;
+}
+
+.wrap {
+  overflow: hidden;
+    @include mq(sp) {
+      text-align: center;
+    }
+}
+
+
+
+
+header {
+  @include mq(md) {
+    height: 800px;
+  }
+  width: 100%;
+  position: relative;
+
+  .header-image img{
+    width: 100%;
+    max-width: 100%;
+    @include mq(md) {
+      height: 800px;
+    }
+  }
+  
+  .header-nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .header-logo {
+    @include mq(md) {
+      width: 300px;
+      height: 180px;
+      opacity: 0.9;
+      margin-top: -30px;
+    }
+
+    @include mq(sp) {
+      width: 100px;
+      margin-top: -20px;
+    }
+  }
+
+  .header-text {
+    @include mq(md) {
+      margin-right: 40px;
+      margin-top: -40px;
+      text-align: center;
+  
+      .header-text-p1 {
+        font-size: 16px;
+      }
+  
+      .header-text-p2 {
+        font-size: 20px;
+      }
+      
+    }
+
+    @include mq(sp) {
+      .header-text {
+        font-size: 10px;
+      }
+
+      .header-text-p1 {
+        font-size: 14px;
+        margin-top: 15px;
+      }
+      
+    }
+  }
+
+  .header-left {
+    @include mq(md) {
+      margin-left: 40px;
+    }
+
+    @include mq(sp) {
+      display: flex;
+    }
+  }
+
+  .header-right {
+    @include mq(md) {
+      margin-left: auto;
+      margin-right: 20px;      
+    }
+
+
+  }
+
+  .header-list {
+    @include mq(md) {
+      display: flex;
+      font-size: 20px;
+      padding-top: 60px;
+      
+    }
+
+
+    .header-list-item {
+      margin-right: 20px;
+      
+      
+      a {
+        text-decoration: none;
+        display: block;
+        color: #f6e9e3;
+
+        @include mq(sp) {
+          color: #333;
+          padding-top: 40px;
+        }
+        
+        &::after {
+          content: "";
+          border-bottom: solid 2px #f6e9e3;
+          display: block;
+          transition: all .3s ease;
+          width: 0;
+        }
+      
+        &:hover {
+          opacity: 0.8;
+          
+          &::after{
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+
+  .header-greet {
+    color: #f6e9e3;
+    position: absolute;
+    
+    @include mq(md) {
+      top: 450px;
+      left: 280px;
+      font-size: 36px;
+      line-height: 2em;     
+    }
+
+    @include mq(sp) { 
+      font-size: 14px;
+      top: 200px;
+    
+    }
+
+  }
+
+  .header-greet2 {
+    color: #f6e9e3;
+    position: absolute;
+
+    @include mq(md) {
+      top: 550px;
+      left: 280px;
+      font-size: 36px;
+      line-height: 2em;     
+    }
+
+    @include mq(sp) { 
+      font-size: 14px;
+      top: 250px;
+    
+    }
+
+  }
+
+
+}
+
+.section1-2_bg {
+  background-color: #fdf8f5;
+  position: relative;
+  @include mq(md) {
+    z-index: -2;
+  }
+}
+
+// .inner {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+
+.section-title {
+  text-align: center;
+  
+  @include mq(md) {
+    font-size: 30px;
+    margin: 0 0 50px 0 ;
+    padding-top: 50px;
+  }
+
+  @include mq(sp) {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+
+}
+
+.heya-eat-box-gb {
+  @include mq(md) {
+    width: 92%;
+    height: 931px;
+    background: url('/images/japanese-paper-04.jpg');
+    z-index: -1;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 0.2;   
+  }
+}
+
+.heya-eat-box-gb2 {
+  @include mq(md) {
+    width: 88%;
+    height: 772px;
+    background: url('/images/japanese-paper-04.jpg');
+    z-index: -1;
+    opacity: 0.9;
+    position: absolute;
+    top: 1060px;
+    right: 0;
+    opacity: 0.2;
+  }
+}
+
+
+
+#heya {
+  margin: 0 auto;  
+  
+  @include mq(md) {
+    width: 1200px;
+  }
+
+  @include mq(sp) {
+    padding-top: 50px;
+  }
+  
+  img {
+    @include mq(md) {
+      width: 400px;
+      height: 400px;
+      box-shadow: 0 0 0.25em rgba(0,0,0,.25);    
+    }
+
+    @include mq(sp) {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+
+  .heya-text {
+    text-align: center;
+    @include mq(md) {
+      width: 400px;
+      height: 400px;
+      padding-top: 200px;      
+    }
+
+    @include mq(sp) {
+      width: 130px;
+      height: 130px;
+      font-size: 12px;
+    }
+
+  }
+
+  .heya-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .heya-content2 {
+    display: flex;
+  }
+
+}
+
+
+#eat {
+  @include mq(md) {
+    width: 1200px;
+    margin: 0 auto;
+  
+    .eat-content1 {
+      display: flex;
+    }
+  
+    .eat-content2 {
+      display:flex;
+      margin-top: -130px;
+  
+    }
+  
+  }
+
+
+  .eat-text {
+    @include mq(md) {
+      width: 600px;
+      height: 400px;
+      font-size: 20px;      
+      padding-top: 200px;
+    }
+    
+    text-align: center;
+
+    @include mq(sp) {
+      font-size: 12px;
+
+    }
+  }
+  .eat-text2 {
+    @include mq(md) {
+      width: 400px;
+      height: 400px;
+      font-size: 20px;
+      padding-top: 200px;  
+    }
+
+    text-align: center;
+    @include mq(sp) {
+      font-size: 12px;
+      
+    }
+  
+  }
+
+
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+  }
+
+  .dinner{
+    @include mq(md) {
+      width: 600px;
+      height: 500px;
+      margin-right: 100px;  
+    }
+
+    @include mq(sp) {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  
+  .awamori {
+    @include mq(md) {
+      width: 400px;
+      height: 400px;
+      margin-left: 150px;      
+    }
+
+    @include mq(sp) {
+      width: 200px;
+      height: 200px;
+    }
+
+
+  }
+
+}
+
+
+#price {
+  
+  .price-title {
+    text-align: center;
+    padding-top: 10px;
+
+    @include mq(md) {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    @include mq(sp) {
+      font-size: 16px;
+    }
+  }
+
+  table {
+    @include mq(md) {
+      width: 1200px;
+      margin: 0 auto;
+      border-collapse: collapse;      
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  table tr{
+    border-bottom: solid 2px #333;
+  }
+  
+  table tr:last-child{
+    border-bottom: none;
+  }
+
+  table th{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #52c2d0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+  }
+
+  
+
+}
+
+
+
+
+#sugosikata {
+  height: 100%;
+  background-color: #fdf8f5;
+  
+
+  img {
+    width: 300px;
+    height: 300px;      
+  }
+
+  .asa {
+    @include mq(md) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+    margin-top: 20px;
+  }
+
+  .asa-text {
+    @include mq(md) {
+      width: 490px;
+      padding-top: 40px;
+      font-size: 20px;
+      line-height: 1.5em;   
+    }
+    background: url('/images/bg-pickup.jpg');
+    box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+    text-align: center;
+
+    @include mq(sp) {
+      width: 300px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+  }
+
+  .asa-img {
+    @include mq(md) {
+      width: 450px;
+      height: 310px; 
+    }
+    box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+
+    @include mq(sp) {
+      width: 300px;
+      height: 150px;
+    }
+  }
+
+  .kuruma {
+    @include mq(md) {
+      display: flex;
+      justify-content: center;      
+      margin-right: 20px;
+    }
+    margin-top: 20px;
+
+    @include mq(sp) {
+      
+    }
+  }
+
+  .kuruma-img {
+    @include mq(md) {
+      width: 490px;
+      height: 310px;
+    }
+
+    box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+
+    @include mq(sp) {
+      width: 300px;
+      height: 180px;
+    }
+  }
+
+  .kuruma-text {
+    @include mq(md) {
+      width: 450px;
+      padding-top: 100px;
+      font-size: 20px;
+      line-height: 1.5em;      
+    }
+    background: url('/images/bg-pickup.jpg');
+    box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+    text-align: center;
+
+    @include mq(sp) {
+      width: 300px;
+      margin: 0 auto;
+      font-size: 14px;
+      padding: 10px;
+      
+    }
+  }
+
+  .slide {
+    @include mq(md) {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      display: none;
+    }
+    
+    display: none;
+    text-align: center;      
+
+    li {
+      @include mq(md) {
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+
+      
+      
+
+      box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+
+      @include mq(sp) {
+       margin: 20px auto;
+       
+      
+      }
+    }
+  }
+
+  .show {
+    display: inline-block;
+
+    @include mq(md) {
+      display: flex;  
+    }
+
+  
+  }
+
+  #sugosikata-title {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @include mq(md) {
+      font-size: 20px;
+    }
+
+    @include mq(sp) {
+      position: relative;
+    }
+
+    .index-btn {
+      margin-right: 20px;
+      padding: 10px;
+      border: solid 2px #333;
+      cursor: pointer;
+      box-shadow: 0 0 0.25em rgba(0,0,0,.25);
+    }
+
+    .active {
+      background-color: #a5e9f1;
+    }
+
+  }
+
+  .slide-text {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    background: url('/images/bg-pickup.jpg');
+    line-height: 1.5em;
+  }
+
+
+}
+
+#access {
+  @include mq(md) {
+    height: 500px;
+    
+  }
+  position: relative;
+  text-align: center;
+  background-color: #fdf8f5;
+
+
+  @include mq(md) {
+    .access-bg-box {
+      height: 500px;
+      width: 60%;
+      position: absolute;
+      background: url('/images/japanese-paper-04.jpg');
+      opacity: 0.2;
+      z-index: 1;
+    }    
+  }
+  
+
+  .section-title-access {
+    @include mq(md) {
+      font-size: 32px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 530px;      
+    }
+
+    @include mq(sp) {
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
+
+
+  .access-text{
+    @include mq(md) {
+      width: 60%;
+      font-size: 20px;
+      padding-left: 50px;
+      padding-top: 20px;
+      z-index: 2;
+    }
+    line-height: 1.5em;
+
+    @include mq(sp) {
+      font-size: 14px;
+    }
+
+    
+    .tel {
+      @include mq(md) {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 24px;   
+      }
+      display: inline-block;
+      color: red;
+      border-bottom: 1px solid red;
+
+      @include mq(sp) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .pic {
+    @include mq(md) {
+      margin-top: 30px;
+    }
+    @include mq(sp) {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .access-etc {
+    @include mq(md) {
+      margin-top: -60px;
+      margin-right: 140px;
+      line-height: 1.5em;
+      text-align: center;
+      z-index: 2;      
+    }
+
+
+    .access-etc-text {
+      @include mq(sp) {
+       margin-top: 10px; 
+       font-size: 14px;
+       line-height: 1.5em;
+      }
+
+    }
+
+
+
+  }
+
+  .hune {
+    @include mq(md) {
+      height: 130px;
+      display: flex;
+    }
+  }
+
+  .hikouki {
+    @include mq(md) {
+      height: 130px;
+      display: flex;
+      margin-top: 30px;      
+    }
+  }
+
+  .heri {
+    @include mq(md) {
+      height: 130px;
+      display: flex;
+      margin-top: 30px;
+    }
+  }
+
+  .access-container {
+    @include mq(md) {
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+  img {
+    width: 200px;
+    height: 130px;
+    @include mq(md) {
+      vertical-align: middle;
+      margin-right: 10px; 
+    }
+
+    @include mq(sp) {
+      margin-top: 10px;
+    }
+
+  }
+
+  .access-etc-img {
+    height: 130px;
+  }
+
+  
+ 
+
+}
+
+
+#greet {
+  width: 100%;
+  height: 100%;
+  background-color: #fdf8f5;
+  
+
+  @include mq(sp) {
+    padding-top: 30px;
+  }
+
+  .owner-message {
+    @include mq(md) {
+      width: 50%;  
+    }
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .owner-img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    img {
+      border-radius: 50%;
+    }
+
+  }
+
+  @include mq(md) {
+    .message-box {
+      width: 500px;
+      margin: 0 auto;
+      padding: 50px 50px 0;
+    }    
+  }
+
+
+  .greet-text_info-container {
+
+    @include mq(md) {
+      display: flex;
+    }
+
+
+  }
+
+    #info {
+      text-align: center;
+
+      @include mq(md) {
+        width: 50%;
+        
+        .section-title {
+          padding-right: 166px;
+        }
+      }
+      
+
+
+
+      .info-items {
+        background-color: #fff;
+
+        @include mq(md) {
+          height: 50%;
+          width: 80%;
+          
+        }
+
+        .info-more {
+
+          a {
+            color: #324ca1;
+          }
+          display: inline-block;
+          border-bottom: 2px solid #324ca1;
+          margin-top: 60px;
+          position: relative;
+
+        }
+          
+      }
+    }
+
+    .info-item  {
+      padding-top: 20px;
+      border-bottom: solid 1px #333;
+
+      @include mq(sp) {
+        font-size: 12px;
+        
+      }
+
+
+      .info-meta {
+       display: flex;
+      }
+
+      a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+
+      .info-public {
+        padding: 0 10px 5px;
+      }
+
+      .info-label {
+        padding: 0 5px 5px;
+      }
+
+      .info-body {
+        width: 60%;  
+        padding: 0 5px 20px;
+      }
+      
+
+    }
+    
+    
+}
+  
+
+
+
+footer {
+  width: 100%;
+  background-color: #526170;
+
+  a {
+    color: #fdf8f5;
+    text-decoration: none;
+  }
+
+  .footer-link {
+    color: #fdf8f5;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-list {
+    padding-left: 50px;
+    
+    li  {
+      padding-top: 20px;
+    }
+  }
+
+  .footer-sns {
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+
+
+    .fab {
+      color: #fdf8f5;
+      font-size: 36px;
+      padding-right: 10px;
+    }
+  }
+ 
+  img {
+    width: 100px;
+    height: 100px; 
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .footer-text {
+    @include mq(sp) {
+      font-size: 12px;
+    }
+  }
+
+
+}
+
+
