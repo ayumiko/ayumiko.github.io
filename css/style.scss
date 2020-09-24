@@ -253,7 +253,7 @@ header {
   @include mq(md) {
     width: 92%;
     height: 931px;
-    background: url('/japanese-paper-04.jpg');
+    background: url('/images/japanese-paper-04.jpg');
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -267,7 +267,7 @@ header {
   @include mq(md) {
     width: 88%;
     height: 772px;
-    background: url('/japanese-paper-04.jpg');
+    background: url('/images/japanese-paper-04.jpg');
     z-index: -1;
     opacity: 0.9;
     position: absolute;

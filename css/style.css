@@ -240,7 +240,7 @@ header .header-greet2 {
   .heya-eat-box-gb {
     width: 92%;
     height: 931px;
-    background: url("/japanese-paper-04.jpg");
+    background: url("/images/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -254,7 +254,7 @@ header .header-greet2 {
   .heya-eat-box-gb2 {
     width: 88%;
     height: 772px;
-    background: url("/japanese-paper-04.jpg");
+    background: url("/images/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
