@@ -27,10 +27,15 @@ $breakpoints: (
 
 
 
+
 body {
   font-family: "Hannari","ヒラギノ明朝 ProN",serif;
   box-sizing: content-box;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrap {
@@ -90,6 +95,7 @@ header {
   
       .header-text-p1 {
         font-size: 16px;
+        color: rgb(133, 60, 60);
       }
   
       .header-text-p2 {
@@ -146,7 +152,7 @@ header {
       a {
         text-decoration: none;
         display: block;
-        color: #f6e9e3;
+        color: #333;
 
         @include mq(sp) {
           color: #333;
@@ -155,7 +161,7 @@ header {
         
         &::after {
           content: "";
-          border-bottom: solid 2px #f6e9e3;
+          border-bottom: solid 2px  rgb(133, 60, 60);
           display: block;
           transition: all .3s ease;
           width: 0;
@@ -231,7 +237,7 @@ header {
   text-align: center;
   
   @include mq(md) {
-    font-size: 30px;
+    font-size: 36px;
     margin: 0 0 50px 0 ;
     padding-top: 50px;
   }
@@ -247,7 +253,7 @@ header {
   @include mq(md) {
     width: 92%;
     height: 931px;
-    background: url('/images/japanese-paper-04.jpg');
+    background: url('/japanese-paper-04.jpg');
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -261,7 +267,7 @@ header {
   @include mq(md) {
     width: 88%;
     height: 772px;
-    background: url('/images/japanese-paper-04.jpg');
+    background: url('/japanese-paper-04.jpg');
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -661,7 +667,6 @@ header {
     
   }
   position: relative;
-  text-align: center;
   background-color: #fdf8f5;
 
 
@@ -679,10 +684,11 @@ header {
 
   .section-title-access {
     @include mq(md) {
-      font-size: 32px;
+      font-size: 36px;
       padding-top: 20px;
+      padding-left: 116px;
       margin-bottom: 20px;
-      margin-right: 530px;      
+      
     }
 
     @include mq(sp) {
@@ -697,7 +703,7 @@ header {
     @include mq(md) {
       width: 60%;
       font-size: 20px;
-      padding-left: 50px;
+      padding-left: 116px;
       padding-top: 20px;
       z-index: 2;
     }
@@ -716,7 +722,7 @@ header {
       }
       display: inline-block;
       color: red;
-      border-bottom: 1px solid red;
+      border-bottom: 2px solid red;
 
       @include mq(sp) {
         margin-top: 10px;
@@ -737,9 +743,8 @@ header {
   .access-etc {
     @include mq(md) {
       margin-top: -60px;
-      margin-right: 140px;
+      margin-right: 108px;
       line-height: 1.5em;
-      text-align: center;
       z-index: 2;      
     }
 
@@ -875,7 +880,7 @@ header {
 
 
       .info-items {
-        background-color: #fff;
+        background-color: rgb(248, 219, 219);
 
         @include mq(md) {
           height: 50%;
@@ -886,11 +891,23 @@ header {
         .info-more {
 
           a {
-            color: #324ca1;
+            color: #333;
+            position: relative;
+
+            &::after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 10px 10px 0 10px;
+              border-color: #000333 transparent transparent transparent;
+              position: absolute;
+              top: 20px;
+              left: 10px;
+            }
           }
           display: inline-block;
-          border-bottom: 2px solid #324ca1;
-          margin-top: 60px;
+          margin-top: 15px;
           position: relative;
 
         }
@@ -928,7 +945,8 @@ header {
 
       .info-body {
         width: 60%;  
-        padding: 0 5px 20px;
+        padding: 0 10px 10px 50px;
+        letter-spacing: 2px;
       }
       
 
@@ -950,14 +968,12 @@ footer {
   }
 
   .footer-link {
-    color: #fdf8f5;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
   }
 
   .footer-list {
-    padding-left: 50px;
+    padding-left: 116px;
     
     li  {
       padding-top: 20px;
@@ -967,7 +983,7 @@ footer {
   .footer-sns {
     display: flex;
     padding-top: 20px;
-    padding-right: 50px;
+    padding-right: 116px;
 
 
     .fab {
@@ -987,6 +1003,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    color: #fff;
   }
   
   .footer-text {

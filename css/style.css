@@ -17,6 +17,10 @@ body {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrap {
   overflow: hidden;
 }
@@ -82,8 +86,8 @@ header .header-nav {
     text-align: center;
   }
   header .header-text .header-text-p1 {
-    font-size: 20px;
-    color: #aa1647;
+    font-size: 16px;
+    color: #853c3c;
   }
   header .header-text .header-text-p2 {
     font-size: 20px;
@@ -146,7 +150,7 @@ header .header-list .header-list-item a {
 
 header .header-list .header-list-item a::after {
   content: "";
-  border-bottom: solid 2px #aa1647;
+  border-bottom: solid 2px #853c3c;
   display: block;
   transition: all .3s ease;
   width: 0;
@@ -219,7 +223,7 @@ header .header-greet2 {
 
 @media screen and (min-width: 768px) {
   .section-title {
-    font-size: 30px;
+    font-size: 36px;
     margin: 0 0 50px 0;
     padding-top: 50px;
   }
@@ -236,7 +240,7 @@ header .header-greet2 {
   .heya-eat-box-gb {
     width: 92%;
     height: 931px;
-    background: url("../images/japanese-paper-04.jpg");
+    background: url("/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -250,7 +254,7 @@ header .header-greet2 {
   .heya-eat-box-gb2 {
     width: 88%;
     height: 772px;
-    background: url("../images/japanese-paper-04.jpg");
+    background: url("/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
     position: absolute;
@@ -490,7 +494,7 @@ header .header-greet2 {
 }
 
 #sugosikata .asa-text {
-  background: url("../images/bg-pickup.jpg");
+  background: url("/images/bg-pickup.jpg");
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -561,7 +565,7 @@ header .header-greet2 {
 }
 
 #sugosikata .kuruma-text {
-  background: url("../images/bg-pickup.jpg");
+  background: url("/images/bg-pickup.jpg");
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -662,13 +666,12 @@ header .header-greet2 {
   height: 150px;
   padding: 20px;
   text-align: center;
-  background: url("../images/bg-pickup.jpg");
+  background: url("/images/bg-pickup.jpg");
   line-height: 1.5em;
 }
 
 #access {
   position: relative;
-  text-align: center;
   background-color: #fdf8f5;
 }
 
@@ -683,7 +686,7 @@ header .header-greet2 {
     height: 500px;
     width: 60%;
     position: absolute;
-    background: url("../images/japanese-paper-04.jpg");
+    background: url("/images/japanese-paper-04.jpg");
     opacity: 0.2;
     z-index: 1;
   }
@@ -691,10 +694,10 @@ header .header-greet2 {
 
 @media screen and (min-width: 768px) {
   #access .section-title-access {
-    font-size: 32px;
+    font-size: 36px;
     padding-top: 20px;
+    padding-left: 116px;
     margin-bottom: 20px;
-    margin-right: 530px;
   }
 }
 
@@ -714,7 +717,7 @@ header .header-greet2 {
   #access .access-text {
     width: 60%;
     font-size: 20px;
-    padding-left: 50px;
+    padding-left: 116px;
     padding-top: 20px;
     z-index: 2;
   }
@@ -729,7 +732,7 @@ header .header-greet2 {
 #access .access-text .tel {
   display: inline-block;
   color: red;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
 }
 
 @media screen and (min-width: 768px) {
@@ -738,11 +741,6 @@ header .header-greet2 {
     margin-top: 20px;
     font-size: 24px;
   }
-}
-
-#access .access-text .tel a {
-  color: red;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -767,9 +765,8 @@ header .header-greet2 {
 @media screen and (min-width: 768px) {
   #access .access-etc {
     margin-top: -60px;
-    margin-right: 140px;
+    margin-right: 108px;
     line-height: 1.5em;
-    text-align: center;
     z-index: 2;
   }
 }
@@ -896,7 +893,7 @@ header .header-greet2 {
 }
 
 #greet #info .info-items {
-  background-color: #fff;
+  background-color: #f8dbdb;
 }
 
 @media screen and (min-width: 768px) {
@@ -908,13 +905,25 @@ header .header-greet2 {
 
 #greet #info .info-items .info-more {
   display: inline-block;
-  border-bottom: 2px solid #324ca1;
-  margin-top: 30px;
+  margin-top: 15px;
   position: relative;
 }
 
 #greet #info .info-items .info-more a {
-  color: #324ca1;
+  color: #333;
+  position: relative;
+}
+
+#greet #info .info-items .info-more a::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #000333 transparent transparent transparent;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 
 #greet .info-item {
@@ -948,7 +957,8 @@ header .header-greet2 {
 
 #greet .info-item .info-body {
   width: 60%;
-  padding: 0 5px 20px;
+  padding: 0 10px 10px 50px;
+  letter-spacing: 2px;
 }
 
 footer {
@@ -962,14 +972,12 @@ footer a {
 }
 
 footer .footer-link {
-  color: #fdf8f5;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
 
 footer .footer-list {
-  padding-left: 50px;
+  padding-left: 116px;
 }
 
 footer .footer-list li {
@@ -979,7 +987,7 @@ footer .footer-list li {
 footer .footer-sns {
   display: flex;
   padding-top: 20px;
-  padding-right: 50px;
+  padding-right: 116px;
 }
 
 footer .footer-sns .fab {
@@ -998,6 +1006,7 @@ footer .footer-logo {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  color: #fff;
 }
 
 @media screen and (max-width: 767px) {
