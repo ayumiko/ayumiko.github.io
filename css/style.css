@@ -240,8 +240,8 @@ header .header-greet2 {
 
 @media screen and (min-width: 768px) {
   .heya-eat-box-gb {
-    width: 92%;
-    height: 931px;
+    width: 91.65%;
+    height: 936px;
     background: url("../images/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
@@ -255,7 +255,7 @@ header .header-greet2 {
 @media screen and (min-width: 768px) {
   .heya-eat-box-gb2 {
     width: 88%;
-    height: 772px;
+    height: 778px;
     background: url("../images/japanese-paper-04.jpg");
     z-index: -1;
     opacity: 0.9;
@@ -336,7 +336,7 @@ header .header-greet2 {
   }
   #eat .eat-content2 {
     display: flex;
-    margin-top: -130px;
+    margin-top: -135px;
   }
 }
 
@@ -767,7 +767,7 @@ header .header-greet2 {
 @media screen and (min-width: 768px) {
   #access .access-etc {
     margin-top: -60px;
-    margin-right: 108px;
+    margin-right: 110px;
     line-height: 1.5em;
     z-index: 2;
   }
@@ -901,7 +901,7 @@ header .header-greet2 {
 @media screen and (min-width: 768px) {
   #greet #info .info-items {
     height: 50%;
-    width: 84%;
+    width: 83.5%;
   }
 }
 
